@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'account.settings.page.heading': {
     id: 'account.settings.page.heading',
-    defaultMessage: 'Account Settings',
+    defaultMessage: 'Account settings',
     description: 'The page heading for the account settings page.',
   },
   'account.settings.loading.message': {
@@ -33,7 +33,7 @@ const messages = defineMessages({
   },
   'account.settings.section.account.information': {
     id: 'account.settings.section.account.information',
-    defaultMessage: 'Account Information',
+    defaultMessage: 'Account information',
     description: 'The basic account information section heading.',
   },
   'account.settings.section.account.information.description': {
@@ -43,22 +43,32 @@ const messages = defineMessages({
   },
   'account.settings.section.profile.information': {
     id: 'account.settings.section.profile.information',
-    defaultMessage: 'Profile Information',
+    defaultMessage: 'Profile information',
     description: 'The profile information section heading.',
+  },
+  'account.settings.section.profile.information.description': {
+    id: 'account.settings.section.profile.information.description',
+    defaultMessage: 'Manage your education, languages, and other public information.',
+    description: 'The profile information section heading description.',
   },
   'account.settings.section.site.preferences': {
     id: 'account.settings.section.site.preferences',
-    defaultMessage: 'Site Preferences',
+    defaultMessage: 'Site preferences',
     description: 'The site preferences section heading.',
+  },
+  'account.settings.section.site.preferences.description': {
+    id: 'account.settings.section.site.preferences.description',
+    defaultMessage: 'Customize your WutiSkill experience.',
+    description: 'The site preferences section heading description.',
   },
   'account.settings.section.linked.accounts': {
     id: 'account.settings.section.linked.accounts',
-    defaultMessage: 'Linked Accounts',
+    defaultMessage: 'Linked accounts',
     description: 'The linked accounts section heading.',
   },
   'account.settings.section.linked.accounts.description': {
     id: 'account.settings.section.linked.accounts.description',
-    defaultMessage: 'You can link your identity accounts to simplify signing in to {siteName}.',
+    defaultMessage: 'Connect your external accounts to simplify sign-in to {siteName}.',
     description: 'The linked accounts section heading description.',
   },
   'account.settings.field.username': {
@@ -78,12 +88,12 @@ const messages = defineMessages({
   },
   'account.settings.field.full.name.empty': {
     id: 'account.settings.field.full.name.empty',
-    defaultMessage: 'Add name',
+    defaultMessage: 'Add your full name',
     description: 'Placeholder for empty account settings name field.',
   },
   'account.settings.field.full.name.help.text': {
     id: 'account.settings.field.full.name.help.text',
-    defaultMessage: 'The name that is used for ID verification and that appears on your certificates.',
+    defaultMessage: 'The name used for identity verification and shown on your certificates.',
     description: 'Help text for the account settings name field.',
   },
   'account.settings.field.full.name.help.text.default': {
@@ -203,12 +213,12 @@ const messages = defineMessages({
   },
   'account.settings.field.email': {
     id: 'account.settings.field.email',
-    defaultMessage: 'Email address (Sign in)',
+    defaultMessage: 'Email address (sign in)',
     description: 'Label for account settings email field.',
   },
   'account.settings.field.email.empty': {
     id: 'account.settings.field.email.empty',
-    defaultMessage: 'Add email address',
+    defaultMessage: 'Add an email address',
     description: 'Placeholder for empty account settings email field.',
   },
   'account.settings.field.email.confirmation': {
@@ -248,7 +258,7 @@ const messages = defineMessages({
   },
   'account.settings.field.dob.empty': {
     id: 'account.settings.field.dob.empty',
-    defaultMessage: 'Add year of birth',
+    defaultMessage: 'Add your birth year',
     description: 'Placeholder for empty account settings year of birth field.',
   },
   'account.settings.field.year_of_birth.options.empty': {
@@ -313,7 +323,7 @@ const messages = defineMessages({
   },
   'account.settings.field.country.empty': {
     id: 'account.settings.field.country.empty',
-    defaultMessage: 'Add country',
+    defaultMessage: 'Add a country',
     description: 'Placeholder for empty account settings country field.',
   },
   'account.settings.field.country.options.empty': {
@@ -343,7 +353,7 @@ const messages = defineMessages({
   },
   'account.settings.field.site.language.help.text': {
     id: 'account.settings.field.site.language.help.text',
-    defaultMessage: 'The language used throughout this site. This site is currently available in a limited number of languages.',
+    defaultMessage: 'The language used across the site. The site is currently available in a limited number of languages.',
     description: 'Help text for the site language field.',
   },
   'account.settings.field.education': {
@@ -353,7 +363,7 @@ const messages = defineMessages({
   },
   'account.settings.field.education.empty': {
     id: 'account.settings.field.education.empty',
-    defaultMessage: 'Add level of education',
+    defaultMessage: 'Add an education level',
     description: 'Placeholder for empty account settings education field.',
   },
   'account.settings.field.education.levels.empty': {
@@ -414,7 +424,7 @@ const messages = defineMessages({
   },
   'account.settings.field.gender.empty': {
     id: 'account.settings.field.gender.empty',
-    defaultMessage: 'Add gender',
+    defaultMessage: 'Add your gender',
     description: 'Placeholder for empty account settings gender field.',
   },
   'account.settings.field.gender.options.empty': {
@@ -460,7 +470,7 @@ const messages = defineMessages({
   },
   'account.settings.field.time.zone.empty': {
     id: 'account.settings.field.time.zone.empty',
-    defaultMessage: 'Set time zone',
+    defaultMessage: 'Set the time zone',
     description: 'Placeholder for empty for time zone settings field.',
   },
   'account.settings.field.time.zone.description': {
@@ -486,12 +496,12 @@ const messages = defineMessages({
 
   'account.settings.section.social.media': {
     id: 'account.settings.section.social.media',
-    defaultMessage: 'Social Media Links',
+    defaultMessage: 'Social media links',
     description: 'Section header for social media links settings',
   },
   'account.settings.section.social.media.description': {
     id: 'account.settings.section.social.media.description',
-    defaultMessage: 'Optionally, link your personal accounts to the social media icons on your {siteName} profile.',
+    defaultMessage: 'Add your social links to display them on your {siteName} profile.',
     description: 'Section subheader for social media links settings',
   },
   'account.settings.field.social.platform.name.linkedin': {
@@ -501,12 +511,12 @@ const messages = defineMessages({
   },
   'account.settings.field.social.platform.name.linkedin.empty': {
     id: 'account.settings.field.social.platform.name.linkedin.empty',
-    defaultMessage: 'Add LinkedIn profile',
+    defaultMessage: 'Add a LinkedIn profile',
     description: 'Placeholder for an empty LinkedIn field',
   },
   'account.settings.jump.nav.delete.account': {
     id: 'account.settings.jump.nav.delete.account',
-    defaultMessage: 'Delete My Account',
+    defaultMessage: 'Delete my account',
     description: 'Header for the user account deletion area',
   },
   'account.settings.field.social.platform.name.twitter': {
@@ -516,7 +526,7 @@ const messages = defineMessages({
   },
   'account.settings.field.social.platform.name.twitter.empty': {
     id: 'account.settings.field.social.platform.name.twitter.empty',
-    defaultMessage: 'Add Twitter profile',
+    defaultMessage: 'Add an X profile',
     description: 'Placeholder for an empty Twitter field',
   },
 
@@ -527,7 +537,7 @@ const messages = defineMessages({
   },
   'account.settings.field.social.platform.name.facebook.empty': {
     id: 'account.settings.field.social.platform.name.facebook.empty',
-    defaultMessage: 'Add Facebook profile',
+    defaultMessage: 'Add a Facebook profile',
     description: 'Placeholder for an empty Facebook field',
   },
   'account.settings.editable.field.action.save': {
@@ -562,7 +572,7 @@ const messages = defineMessages({
   },
   'account.settings.field.work.experience': {
     id: 'account.settings.work.experience',
-    defaultMessage: 'Work Experience',
+    defaultMessage: 'Work experience',
     description: 'Label for account settings Work experience field.',
   },
   'account.settings.field.work.experience.empty': {

@@ -3,32 +3,32 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'account.settings.cannot.delete.account.text': {
     id: 'account.settings.cannot.delete.account.text',
-    defaultMessage: 'Please note that, for legal and regulatory compliance purposes, account deletion is currently unavailable.',
+    defaultMessage: 'Please note that account deletion is not currently available for legal and regulatory reasons.',
     description: 'This text is visible when user is not allowed to delete account',
   },
   'account.settings.delete.account.header': {
     id: 'account.settings.delete.account.header',
-    defaultMessage: 'Delete My Account',
+    defaultMessage: 'Delete my account',
     description: 'Header for the user account deletion area',
   },
   'account.settings.delete.account.subheader': {
     id: 'account.settings.delete.account.subheader',
-    defaultMessage: 'We\'re sorry to see you go!',
+    defaultMessage: 'This action is irreversible. All your data will be erased.',
     description: 'A message in the user account deletion area',
   },
   'account.settings.delete.account.text.1': {
     id: 'account.settings.delete.account.text.1',
-    defaultMessage: 'Please note: Deletion of your account and personal data is permanent and cannot be undone. {siteName} will not be able to recover your account or the data that is deleted.',
+    defaultMessage: 'Warning: deleting your account and personal data is permanent and irreversible. {siteName} will not be able to recover your account or deleted data.',
     description: 'A message in the user account deletion area',
   },
   'account.settings.delete.account.text.2': {
     id: 'account.settings.delete.account.text.2',
-    defaultMessage: 'Once your account is deleted, you cannot use it to take courses on {siteName}.',
+    defaultMessage: 'Once your account is deleted, you will no longer be able to use it to take courses on {siteName}, and you will not be able to create a new account with the same email address.',
     description: 'A message in the user account deletion area',
   },
   'account.settings.delete.account.text.2.edX': {
     id: 'account.settings.delete.account.text.2.edX',
-    defaultMessage: 'Once your account is deleted, you cannot use it to take courses on the edX app, edx.org, or any other site hosted by edX. This includes access to edx.org from your employer’s or university’s system and access to private sites offered by MIT Open Learning, Wharton Executive Education, and Harvard Medical School.',
+    defaultMessage: 'Once your account is deleted, you cannot use it to take courses on the edX app, edx.org, or any other site hosted by edX. This includes access to edx.org from your employer’s or university’s system and access to private sites offered by MIT Open Learning, Wharton Executive Education, and Harvard Medical School. You also will not be able to create a new account with the same email address.',
     description: 'A message in the user account deletion area',
   },
   'account.settings.delete.account.text.3.link': {
@@ -38,17 +38,17 @@ const messages = defineMessages({
   },
   'account.settings.delete.account.text.warning': {
     id: 'account.settings.delete.account.text.warning',
-    defaultMessage: 'Warning: Account deletion is permanent. Please read the above carefully before proceeding. This is an irreversible action, and you will no longer be able to use the same email on {siteName}.',
+    defaultMessage: 'Warning: account deletion is final. Please read the information above carefully before continuing. This action is irreversible and you will not be able to create a new account with the same email address.',
     description: 'A message in the user account deletion area',
   },
   'account.settings.delete.account.text.change.instead': {
     id: 'account.settings.delete.account.text.change.instead',
-    defaultMessage: 'Want to change your email, name, or password instead?',
+    defaultMessage: 'Would you rather update your email address, your name, or your password?',
     description: 'A message in the user account deletion area',
   },
   'account.settings.delete.account.button': {
     id: 'account.settings.delete.account.button',
-    defaultMessage: 'Delete My Account',
+    defaultMessage: 'Delete my account',
     description: 'Button label to permanently delete your platform account',
   },
   'account.settings.delete.account.please.activate': {
@@ -68,7 +68,7 @@ const messages = defineMessages({
   },
   'account.settings.delete.account.modal.header': {
     id: 'account.settings.delete.account.modal.header',
-    defaultMessage: 'Are you sure?',
+    defaultMessage: 'Delete your account permanently?',
     description: 'Title of the dialog asking user to confirm that they want to delete their entire account',
   },
   'account.settings.delete.account.modal.text.1': {
@@ -78,12 +78,12 @@ const messages = defineMessages({
   },
   'account.settings.delete.account.modal.text.2': {
     id: 'account.settings.delete.account.modal.text.2',
-    defaultMessage: 'If you proceed, you will be unable to use this account to take courses on {siteName}.',
+    defaultMessage: 'If you proceed, you will be unable to use this account to take courses on {siteName}, and you will not be able to create a new account with the same email address.',
     description: 'Messaging in the dialog asking user to confirm that they want to delete their entire account',
   },
   'account.settings.delete.account.modal.text.2.edX': {
     id: 'account.settings.delete.account.modal.text.2.edX',
-    defaultMessage: 'If you proceed, you will be unable to use this account to take courses on the edX app, edx.org, or any other site hosted by edX. This includes access to edx.org from your employer\'s or university\'s system and access to private sites offered by MIT Open Learning, Wharton Executive Education, and Harvard Medical School.',
+    defaultMessage: 'If you proceed, you will be unable to use this account to take courses on the edX app, edx.org, or any other site hosted by edX. This includes access to edx.org from your employer\'s or university\'s system and access to private sites offered by MIT Open Learning, Wharton Executive Education, and Harvard Medical School. You also will not be able to create a new account with the same email address.',
     description: 'Messaging in the dialog asking user to confirm that they want to delete their entire account',
   },
   'account.settings.delete.account.modal.enter.password': {

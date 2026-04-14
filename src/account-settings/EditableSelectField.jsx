@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { useIntl } from '@edx/frontend-platform/i18n';
+import classNames from 'classnames';
 import {
   Button, Form, StatefulButton,
 } from '@openedx/paragon';
@@ -42,6 +43,7 @@ const EditableSelectField = (props) => {
     ...others
   } = props;
   const id = `field-${name}`;
+  const cardClassName = `account-setting-card--${name.replace(/_/g, '-')}`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -126,13 +128,14 @@ const EditableSelectField = (props) => {
       expression={isEditing ? 'editing' : 'default'}
       cases={{
         editing: (
-          <>
+          <div className={classNames('account-setting-card', 'account-setting-card--editing', cardClassName)}>
             <form onSubmit={handleSubmit}>
               <Form.Group
                 controlId={id}
                 isInvalid={error != null}
+                className="account-setting-card__form-group"
               >
-                <Form.Label size="sm" className="h6 d-block" htmlFor={id}>{label}</Form.Label>
+                <Form.Label size="sm" className="h6 d-block account-setting-card__label" htmlFor={id}>{label}</Form.Label>
                 <Form.Control
                   data-hj-suppress
                   name={name}
@@ -149,10 +152,10 @@ const EditableSelectField = (props) => {
                 {error != null && <Form.Control.Feedback>{error}</Form.Control.Feedback>}
                 {others.children}
               </Form.Group>
-              <p>
+              <div className="account-setting-card__form-actions">
                 <StatefulButton
                   type="submit"
-                  className="mr-2"
+                  className="mr-2 account-setting-card__save"
                   state={saveState}
                   labels={{
                     default: intl.formatMessage(messages['account.settings.editable.field.action.save']),
@@ -172,26 +175,29 @@ const EditableSelectField = (props) => {
                 <Button
                   variant="outline-primary"
                   onClick={handleCancel}
+                  className="account-setting-card__cancel"
                 >
                   {intl.formatMessage(messages['account.settings.editable.field.action.cancel'])}
                 </Button>
-              </p>
+              </div>
             </form>
             {['name', 'verified_name'].includes(name) && <CertificatePreference fieldName={name} />}
-          </>
+          </div>
         ),
         default: (
-          <div className="form-group">
-            <div className="d-flex align-items-start">
-              <h6 aria-level="3">{label}</h6>
+          <div className={classNames('account-setting-card', 'account-setting-card--display', cardClassName, 'form-group')}>
+            <div className="account-setting-card__row">
+              <div className="account-setting-card__copy">
+                <h6 aria-level="3" className="account-setting-card__label">{label}</h6>
+                <p data-hj-suppress className={isGrayedOut ? 'account-setting-card__value grayed-out' : 'account-setting-card__value'}>{renderValue(value)}</p>
+                <p className="account-setting-card__help">{renderConfirmationMessage() || helpText}</p>
+              </div>
               {isEditable ? (
-                <Button variant="link" onClick={handleEdit} className="ml-3">
+                <Button variant="link" onClick={handleEdit} className="account-setting-card__action">
                   <FontAwesomeIcon className="mr-1" icon={faPencilAlt} />{intl.formatMessage(messages['account.settings.editable.field.action.edit'])}
                 </Button>
               ) : null}
             </div>
-            <p data-hj-suppress className={isGrayedOut ? 'grayed-out' : null}>{renderValue(value)}</p>
-            <p className="small text-muted mt-n2">{renderConfirmationMessage() || helpText}</p>
           </div>
         ),
       }}

@@ -5,6 +5,7 @@ import { StatefulButton } from '@openedx/paragon';
 
 import { resetPassword } from './data/actions';
 import messages from './messages';
+import commonMessages from '../AccountSettingsPage.messages';
 import ConfirmationAlert from './ConfirmationAlert';
 import RequestInProgressAlert from './RequestInProgressAlert';
 
@@ -13,26 +14,25 @@ const ResetPassword = (props) => {
   const intl = useIntl();
 
   return (
-    <div className="form-group">
-      <h6 aria-level="3">
-        <FormattedMessage
-          id="account.settings.editable.field.password.reset.label"
-          defaultMessage="Password"
-          description="The password label in account settings"
-        />
-      </h6>
-      <p>
+    <div className="account-setting-card account-setting-card--display account-setting-card--password form-group">
+      <div className="account-setting-card__row">
+        <div className="account-setting-card__copy">
+          <h6 aria-level="3" className="account-setting-card__label">
+            <FormattedMessage
+              id="account.settings.editable.field.password.reset.label"
+              defaultMessage="Mot de passe"
+              description="The password label in account settings"
+            />
+          </h6>
+          <p className="account-setting-card__value account-setting-card__value--accent">
+            {intl.formatMessage(messages['account.settings.editable.field.password.reset.button'])}
+          </p>
+        </div>
         <StatefulButton
-          variant="link"
+          className="account-setting-card__action account-setting-card__action--pill"
+          variant="outline-primary"
           state={status}
           onClick={(e) => {
-            // Swallow clicks if the state is pending.
-            // We do this instead of disabling the button to prevent
-            // it from losing focus (disabled elements cannot have focus).
-            // Disabling it would causes upstream issues in focus management.
-            // Swallowing the onSubmit event on the form would be better, but
-            // we would have to add that logic for every field given our
-            // current structure of the application.
             if (status === 'pending') {
               e.preventDefault();
             }
@@ -40,10 +40,10 @@ const ResetPassword = (props) => {
           }}
           disabledStates={[]}
           labels={{
-            default: intl.formatMessage(messages['account.settings.editable.field.password.reset.button']),
+            default: intl.formatMessage(commonMessages['account.settings.editable.field.action.edit']),
           }}
         />
-      </p>
+      </div>
       {status === 'complete' ? <ConfirmationAlert email={email} /> : null}
       {status === 'forbidden' ? <RequestInProgressAlert /> : null}
     </div>
