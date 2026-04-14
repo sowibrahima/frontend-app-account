@@ -84,17 +84,17 @@ const messages = defineMessages({
   },
   notificationPreferenceGuideLink: {
     id: 'notification.preference.guide.link',
-    defaultMessage: 'as detailed here',
+    defaultMessage: 'in this guide',
     description: 'Link of the notification preference for learner guide',
   },
   notificationPreferenceGuideBody: {
     id: 'notification.preference.guide.body',
-    defaultMessage: 'Notifications for certain activities are enabled by default,',
+    defaultMessage: 'Certain notifications are enabled by default, as explained',
     description: 'Body of the notification preferences for learner guide',
   },
   notificationCadenceDescription: {
     id: 'notification.cadence.description',
-    defaultMessage: 'Daily email notifications are sent at {dailyTime}. Weekly email notifications are sent every Sunday at {weeklyTime}.',
+    defaultMessage: 'Daily notifications are sent at {dailyTime}. Weekly notifications are sent every Sunday at {weeklyTime}.',
     description: 'Notification cadence description',
   },
   notificationDefaultInfo: {

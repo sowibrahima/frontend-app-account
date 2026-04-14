@@ -12,15 +12,20 @@ import { createRoot } from 'react-dom/client';
 import { Route, Routes, Outlet } from 'react-router-dom';
 
 import Header from '@edx/frontend-component-header';
-import { FooterSlot } from '@edx/frontend-component-footer';
 
 import configureStore from './data/configureStore';
 import AccountSettingsPage, { NotFoundPage } from './account-settings';
+import WutiFooter from './components/WutiFooter';
 import IdVerificationPageSlot from './plugin-slots/IdVerificationPageSlot';
 import messages from './i18n';
 
 import './index.scss';
 import Head from './head/Head';
+
+if (window.location.pathname === '/account') {
+  const nextHash = window.location.hash || '#basic-information';
+  window.history.replaceState(null, '', `/account/${nextHash}`);
+}
 
 const rootNode = createRoot(document.getElementById('root'));
 subscribe(APP_READY, () => {
@@ -30,12 +35,12 @@ subscribe(APP_READY, () => {
         <Head />
         <Routes>
           <Route element={(
-            <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
+            <div className="account-app-shell">
               <Header />
-              <main className="flex-grow-1" id="main">
+              <main className="account-app-main" id="main">
                 <Outlet />
               </main>
-              <FooterSlot />
+              <WutiFooter />
             </div>
         )}
           >

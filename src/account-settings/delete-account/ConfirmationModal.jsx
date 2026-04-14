@@ -75,24 +75,27 @@ export class ConfirmationModal extends Component {
 
     return (
       <AlertModal
+        className="account-delete-modal"
         isOpen={open}
         title={intl.formatMessage(messages['account.settings.delete.account.modal.header'])}
         onClose={onCancel}
         isOverflowVisible
         footerNode={(
-          <ActionRow>
-            <Button variant="link" onClick={onCancel}>{intl.formatMessage(messages['account.settings.delete.account.modal.confirm.cancel'])}</Button>
-            <Button variant="danger" onClick={onSubmit}>{intl.formatMessage(messages['account.settings.delete.account.modal.confirm.delete'])}</Button>
+          <ActionRow className="account-delete-modal__footer">
+            <Button variant="link" onClick={onCancel}>
+              {intl.formatMessage(messages['account.settings.delete.account.modal.confirm.cancel'])}
+            </Button>
+            <Button variant="danger" onClick={onSubmit}>
+              {intl.formatMessage(messages['account.settings.delete.account.modal.confirm.delete'])}
+            </Button>
           </ActionRow>
         )}
       >
-        <div className="p-3">
+        <div className="account-delete-modal__content">
           {this.renderError()}
-          <Alert
-            className="alert-warning mt-n2"
-            icon={<FontAwesomeIcon className="mr-2" icon={faExclamationTriangle} />}
-          >
-            <h6>
+          <div className="account-delete-modal__warning">
+            <h6 className="account-delete-modal__warning-title">
+              <FontAwesomeIcon className="mr-2" icon={faExclamationTriangle} />
               {intl.formatMessage(
                 messages['account.settings.delete.account.modal.text.1'],
                 { siteName: getConfig().SITE_NAME },
@@ -107,8 +110,9 @@ export class ConfirmationModal extends Component {
             <p>
               <PrintingInstructions />
             </p>
-          </Alert>
+          </div>
           <Form.Group
+            className="account-delete-modal__password-group"
             for={passwordFieldId}
             isInvalid={errorType !== null}
           >
@@ -121,6 +125,9 @@ export class ConfirmationModal extends Component {
               type="password"
               value={password}
               onChange={onChange}
+              autoComplete="off"
+              data-lpignore="true"
+              data-1p-ignore="true"
             />
             {errorType !== null && (
               <Form.Control.Feedback type="invalid" feedback-for={passwordFieldId}>
