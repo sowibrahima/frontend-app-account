@@ -23,7 +23,7 @@ const PrintingInstructions = () => {
     return (
       <FormattedMessage
         id="account.settings.delete.account.text.3.edX"
-        defaultMessage="Vous risquez également de perdre l’accès aux certificats vérifiés et à d’autres attestations de programme comme les certificats MicroMasters. Vous pouvez en faire une copie pour vos archives avant de procéder à la suppression. {actionLink}."
+        defaultMessage="You may also lose access to verified certificates and other program credentials such as MicroMasters certificates. You can make a copy for your records before proceeding with deletion. {actionLink}."
         description="A message in the user account deletion area warning users that deleting their account will prevent them from accessing their certificates. 'actionLink' is a HTML link with a full sentence that describes how to print a certificate."
         values={{ actionLink }}
       />
@@ -33,7 +33,7 @@ const PrintingInstructions = () => {
   return (
     <FormattedMessage
       id="account.settings.delete.account.text.3"
-      defaultMessage="Vous risquez également de perdre l’accès aux certificats vérifiés et à d’autres attestations de programme. Vous pouvez en faire une copie pour vos archives avant de procéder à la suppression."
+      defaultMessage="You may also lose access to verified certificates and other program credentials. You can make a copy for your records before proceeding with deletion."
       description="A message in the user account deletion area warning users that deleting their account will prevent them from accessing their certificates."
       values={{ actionLink }}
     />
