@@ -1,37 +1,28 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DeleteAccount should match default section snapshot 1`] = `
 <div>
   <h2
     className="section-heading h4 mb-3"
   >
-    Delete My Account
+    Delete my account
   </h2>
   <p>
-    We're sorry to see you go!
+    This action is irreversible. All your data will be erased.
   </p>
   <p>
-    Please note: Deletion of your account and personal data is permanent and cannot be undone. localhost will not be able to recover your account or the data that is deleted.
+    Warning: deleting your account and personal data is permanent and irreversible. localhost will not be able to recover your account or deleted data.
   </p>
   <p>
-    Once your account is deleted, you cannot use it to take courses on localhost.
+    Once your account is deleted, you will no longer be able to use it to take courses on localhost, and you will not be able to create a new account with the same email address.
   </p>
   <p>
-    You may also lose access to verified certificates and other program credentials. You can make a copy of these for your records before proceeding with deletion.
+    You may also lose access to verified certificates and other program credentials. You can make a copy for your records before proceeding with deletion.
   </p>
   <p
     className="text-danger h6"
   >
-    Warning: Account deletion is permanent. Please read the above carefully before proceeding. This is an irreversible action, and you will no longer be able to use the same email on localhost.
-  </p>
-  <p>
-    <a
-      className="pgn__hyperlink default-link standalone-link"
-      href="https://help.edx.org/edxlearner/s/topic/0TOQq0000001UdZOAU/account-basics"
-      target="_self"
-    >
-      Want to change your email, name, or password instead?
-    </a>
+    Warning: account deletion is final. Please read the information above carefully before continuing. This action is irreversible and you will not be able to create a new account with the same email address.
   </p>
   <p>
     <button
@@ -40,7 +31,7 @@ exports[`DeleteAccount should match default section snapshot 1`] = `
       onClick={[MockFunction]}
       type="button"
     >
-      Delete My Account
+      Delete my account
     </button>
   </p>
 </div>
@@ -51,33 +42,24 @@ exports[`DeleteAccount should match unverified account section snapshot 1`] = `
   <h2
     className="section-heading h4 mb-3"
   >
-    Delete My Account
+    Delete my account
   </h2>
   <p>
-    We're sorry to see you go!
+    This action is irreversible. All your data will be erased.
   </p>
   <p>
-    Please note: Deletion of your account and personal data is permanent and cannot be undone. localhost will not be able to recover your account or the data that is deleted.
+    Warning: deleting your account and personal data is permanent and irreversible. localhost will not be able to recover your account or deleted data.
   </p>
   <p>
-    Once your account is deleted, you cannot use it to take courses on localhost.
+    Once your account is deleted, you will no longer be able to use it to take courses on localhost, and you will not be able to create a new account with the same email address.
   </p>
   <p>
-    You may also lose access to verified certificates and other program credentials. You can make a copy of these for your records before proceeding with deletion.
+    You may also lose access to verified certificates and other program credentials. You can make a copy for your records before proceeding with deletion.
   </p>
   <p
     className="text-danger h6"
   >
-    Warning: Account deletion is permanent. Please read the above carefully before proceeding. This is an irreversible action, and you will no longer be able to use the same email on localhost.
-  </p>
-  <p>
-    <a
-      className="pgn__hyperlink default-link standalone-link"
-      href="https://help.edx.org/edxlearner/s/topic/0TOQq0000001UdZOAU/account-basics"
-      target="_self"
-    >
-      Want to change your email, name, or password instead?
-    </a>
+    Warning: account deletion is final. Please read the information above carefully before continuing. This action is irreversible and you will not be able to create a new account with the same email address.
   </p>
   <p>
     <button
@@ -86,7 +68,7 @@ exports[`DeleteAccount should match unverified account section snapshot 1`] = `
       onClick={null}
       type="button"
     >
-      Delete My Account
+      Delete my account
     </button>
   </p>
   <div
@@ -131,33 +113,24 @@ exports[`DeleteAccount should match unverified account section snapshot 2`] = `
   <h2
     className="section-heading h4 mb-3"
   >
-    Delete My Account
+    Delete my account
   </h2>
   <p>
-    We're sorry to see you go!
+    This action is irreversible. All your data will be erased.
   </p>
   <p>
-    Please note: Deletion of your account and personal data is permanent and cannot be undone. localhost will not be able to recover your account or the data that is deleted.
+    Warning: deleting your account and personal data is permanent and irreversible. localhost will not be able to recover your account or deleted data.
   </p>
   <p>
-    Once your account is deleted, you cannot use it to take courses on localhost.
+    Once your account is deleted, you will no longer be able to use it to take courses on localhost, and you will not be able to create a new account with the same email address.
   </p>
   <p>
-    You may also lose access to verified certificates and other program credentials. You can make a copy of these for your records before proceeding with deletion.
+    You may also lose access to verified certificates and other program credentials. You can make a copy for your records before proceeding with deletion.
   </p>
   <p
     className="text-danger h6"
   >
-    Warning: Account deletion is permanent. Please read the above carefully before proceeding. This is an irreversible action, and you will no longer be able to use the same email on localhost.
-  </p>
-  <p>
-    <a
-      className="pgn__hyperlink default-link standalone-link"
-      href="https://help.edx.org/edxlearner/s/topic/0TOQq0000001UdZOAU/account-basics"
-      target="_self"
-    >
-      Want to change your email, name, or password instead?
-    </a>
+    Warning: account deletion is final. Please read the information above carefully before continuing. This action is irreversible and you will not be able to create a new account with the same email address.
   </p>
   <p>
     <button
@@ -166,7 +139,7 @@ exports[`DeleteAccount should match unverified account section snapshot 2`] = `
       onClick={null}
       type="button"
     >
-      Delete My Account
+      Delete my account
     </button>
   </p>
   <div

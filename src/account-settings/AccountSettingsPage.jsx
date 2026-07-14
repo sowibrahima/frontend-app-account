@@ -131,7 +131,7 @@ class AccountSettingsPage extends React.Component {
   };
 
   getPanelClassName = (sectionId, baseClass = 'account-section') => (
-    `${baseClass}${this.state.activeSection === sectionId ? '' : ' d-none'}`
+    `${baseClass}${this.state.activeSection === sectionId ? '' : ' account-section--hidden'}`
   );
 
   // NOTE: We need 'locale' for the memoization in getLocalizedTimeZoneOptions.  Don't remove it!
